@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.8.3.jar" sourcepath="lib/jsoup-1.8.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Jim/Desktop/eclipse/workspace/Thesis/lib/jsoup-1.8.3-javadoc.jar"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jim/Desktop/eclipse/workspace/Thesis/jackson-core-2.7.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Jim/Desktop/eclipse/workspace/Thesis/jackson-core-2.7.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jim/Desktop/eclipse/workspace/Thesis/jackson-databind-2.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jim/Desktop/eclipse/workspace/Thesis/jackson-annotations-2.7.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

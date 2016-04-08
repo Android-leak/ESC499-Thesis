@@ -1,0 +1,36 @@
+Qualcomm
+MediaTek
+Broadcom
+Motorola
+Samsung
+HTC
+LG
+ZTE
+OpenCORE
+Minikin
+elf_utils.cpp
+bcmdhd/wifi_hal
+dhcpcd
+libmedia
+Bionic
+libc
+libdl
+libm
+libpng
+libpthread
+libcutils
+libutils
+libsysutils
+libs/binder
+vold
+btif_config.c
+core/jni/android/
+/system/bin/keystore
+platform/frameworks/native
+arm-wt-22k/lib_src
+keystore/keystore.cpp
+SQLite
+Native Frameworks Library
+Imagination Technologies
+Dalvik
+Zygote

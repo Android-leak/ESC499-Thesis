@@ -1,0 +1,79 @@
+Mozilla Firefox
+Adobe
+Chrome
+Symantec
+Apple
+Lenovo
+Siemens
+Wells Fargo
+Bank of America
+Chase
+Ogaki Kyoritsu Bank
+USAA
+NEC
+FortiClient
+Google Email
+Android browser
+Browser
+Android Picasa
+SPCanywhere
+Brandon Bowles Open Explorer
+Droidware UK Explorer+
+Yodobashi
+SysAid
+SIM Toolkit
+strongSwan
+NTT Broadband Platform
+NTT DOCOMO
+Newphoria
+AirDroid
+Qolsys IQ
+Cisco WebEx
+Bouncy Castle
+SyncManager
+Widevine QSEE TrustZone
+Simeji
+ArtIME
+COBIME
+Cisco Jabber
+Cisco AnyConnect Secure Mobility Client
+AnyConnect VPN Client
+FlickWnn
+OMRON OpenWnn
+Sleipnir
+Yahoo!
+SoftBank
+Pizza Hut
+Angel Browser
+Galapagos
+Cybozu
+Cookpad
+EStrongs
+twicca
+TwitRocker2
+iLunascape
+Dolphin Browser
+U+Box
+Cnectd
+Puella Magi Madoka Magica
+NHN
+GREE application
+mixi application
+ATOK application
+jigbrowser+
+Boat Browser
+Opera
+Loctouch
+Weathernews
+Zoner
+Breezy
+AVG
+ACRA
+MartiniCreations
+CallConfirm
+Ming Blacklist
+QIWI Wallet
+Skype
+Citrix
+La Banque Postale
+Bump

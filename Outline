@@ -1,0 +1,49 @@
+Study of Distribution of Android Vulnerabilities 
+
+Background:
+cvedetails provides a comprehensive list of vulnerabilities in all Android systems. The objective of this 
+project is to parse the website, and analyze the source code information of each vulnerability
+
+Objective
+One of the missing pieces of cve is that it dose not group vulnerabilities by origin. Our first task is to do
+just that. 
+
+cvedetail analysis: 
+Website reprots a vulnerability with the following sections: 
+
+1. CVSS Score & Vulnerability Types
+reports overall security impact of this vulnerability. Not important for this study for now
+
+2. Products Affected By Vulerability
+Reports Android version affected by the vulnerability. Not important at the moment
+
+3. Number of affected versions by product
+Not important for now
+
+4. References for Vulnerability
+References sometimes include source code. Important. 
+
+5. Metasploit Modules related to Vulnerability
+Not important for now
+
+
+
+
+Our focus is on 4.
+
+Approach:
+Section 4 often contains links to the actual source code (android.googlesource.com). 
+Being able to retrive this link for each vulnerability will allow us to trace the origin of each vulerability
+
+Here are the steps in detail:
+1. Retrieve all Android vulnerabilities from cvedetails, from the following link:
+http://www.cvedetails.com/vulnerability-list.php?vendor_id=1224&product_id=19997&version_id=&page=1&hasexp=0&opdos=0&opec=0&opov=0&opcsrf=0&opgpriv=0&opsqli=0&opxss=0&opdirt=0&opmemc=0&ophttprs=0&opbyp=0&opfileinc=0&opginf=0&cvssscoremin=0&cvssscoremax=0&year=0&month=0&cweid=0&order=1&trc=148&sha=1bd76566e804bd0baf4aa6ef43598ed24565b5b6
+
+2. For each link, open, and parse out references for CVE-number. Search for all reference links
+
+3. If link contains android.googlesource.com, visit that link. Parse out the source directory
+
+4. Gather all directory and collect statistics
+
+5. Cross reference the vulnerability by using http://androidvulnerabilities.org/all
+

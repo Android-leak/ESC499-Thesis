@@ -1,0 +1,100 @@
+Thesis Documentations
+Goal: 
+1. Build a Database of Android vulneraiblities collecting information he thinks is useful about each (i.e. component, source file, nature, severity, etc)
+2. Try to answer the question: What is the distribution of vulnerabilities between Android applications vs Firmware?
+3. Try to answer the question: What is the distribution of vulnerabilities between JAVA and native C/C++ code?
+4. Evaluate Difficulty in patching each directory
+
+
+Part 1
+- 找有CVE信息的网站
+	- CVEDetails
+	- androidvulnerabilities.org
+	- SCAP
+	- more?
+- 建一个合适的data structure
+- 建立一个屌屌的database，把找到的东西存起来
+- database需要能实时更新
+- 把source的信息记录下来
+
+Part 2/3
+- 把android.googlesource.com给parse一遍
+- 怎样才能知道vulnerability对应了哪个directory呢？
+	- 从vulnerability source直接分析
+		好处：简单，最直接
+		坏处：？
+
+- 知道了vulnerability对应的directory，能分析什么？
+	- Java还是C/C++
+	- Framework还是其他的？
+	- Branch?
+
+- http://www.netmite.com/android/mydroid/development/pdk/docs/intro_source_code.html#androidSourceCodeDirectoriesKernel
+
+
+Part 4
+- Huang et al.: Life Cycle Model
+- Thomas et al.: exponential decay
+
+TODO:
+1. 完善database
+
+2. 分析
+---
+有source的，great!
+没有source，怎么办？
+How to categorize vulnerabilities of unknown sources?
+	- no fucking idea! we know at least some of the attributes such as affected versions
+	- fake a location. what do?
+
+---
+没有vulnerability的具体日期。怎么办？
+- 用affected versions和每个version的市场占有率
+- 根据在哪层判断影响
+
+3. 画图
+
+
+---------------------------
+				// TODO: what do we do with parsed entries?
+				// 1. find whether summaries contain keywords that can map to sources
+				// 		- look for .java, .cpp, .c, .mk, */*/ patterns
+				// 2. map to Android Bulletin to find sources
+				// 3. find whether entry belongs to a 3rd party app, by looking at product
+				// 4. come up with a composite score formula using:
+				// 		- date released
+				// 		- versions affected
+				// 		- source locations
+
+
+
+分析细节：
+- Stack Region {appliation, framework, native, kernel, unknown}
+- Source Class {google, linux, summary, cpe, manual}
+- list of blurry references
+- list of accurate references
+
+
+
+source classification 种类
+1. 有googleSource
+2. 有linuxSource
+3. 都没有，但是有summarySource
+4. 都没有，有Manual categorization
+
+
+Stack Region classification
+1. 有google source:
+	- 分析directory
+2. 有linux source:
+	- 大部分应该是Kernel
+3. 有summary Source:
+	- 分析directory
+	- 可能可以自动化，但是没时间
+4. manual categorization
+	- 手动
+
+
+分析directory:TODO
+不算android mod, CyanogenMod? Apache Cordova, PhoneGap
+不算native java error, native linux error

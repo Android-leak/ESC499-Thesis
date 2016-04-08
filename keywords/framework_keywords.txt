@@ -1,0 +1,26 @@
+libstagefright
+mediaserver
+PackageManagerService
+TrustManagerImpl
+classlib/modules/security
+com/android/internal
+com/android/systemui
+com/android/server
+com.android.phone
+com/android/phone
+com.android.settings
+org/conscrypt/OpenSSLX509Certificate.java
+src/com/android/settings
+packages/WAPPushManager/
+packages/Keyguard/
+internal/telephony
+Telephony
+Android SDK
+Media Projection
+Media Player Framework
+SystemUI
+Wi-Fi
+Bluetooth
+System Server
+Media Framework
+Setup Wizard
